@@ -11,7 +11,7 @@ body {
 #mainbar {
   background-color: rgb(212, 215, 218);
   height: 340px;
-  width: 1903px;
+  width: 100%;
   margin-top: 10px;
 }
 #thirdbox {
@@ -20,21 +20,22 @@ body {
   margin-top: 15px;
 }
 #thirdfirstbox {
-  background-color: green;
+  background-color: antiquewhite;
   height: 90%;
   width: 98%;
   margin: 0 auto;
   position: relative;
   top: 5%;
+  border: 4px solid chartreuse;
 }
-#thirdsecondbox {
+/*#thirdsecondbox {
   background-color: antiquewhite;
   height: 98%;
   width: 1855px;
   position: relative;
   top: 1%;
   margin-left: 5px;
-}
+}*/
 .mainboxleft {
   background-color: aqua;
   height: 50%;
