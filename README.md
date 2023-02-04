@@ -8,11 +8,11 @@ tasks from betasquirrel
 
 ## Task
 
-| Requirments                | output                   |
-| -------------------------- | -------------------------|
-| ![task-1](req/task-1.jpg)  | ![1](output/task-1.png)  |
-| ![task-2](req/task-2.jpg)  | ![2](output/task-2.png)  |
-| ![task-4](req/task-4.jpg)  | ![4](output/task-4.jpeg) |
+| Requirments                        | output                          |
+| ---------------------------------  | --------------------------------|
+| ![task-1](images/req/task-1.jpg)   | ![1](images/output/task-1.png)  |
+| ![task-2](images/req/task-2.jpg)   | ![2](images/output/task-2.png)  |
+| ![task-4](images/req/task-4.jpg)   | ![4](images/output/task-4.jpeg) |
 
 ## linux commands
 
@@ -58,4 +58,4 @@ tasks from betasquirrel
 
  ## Exercise
 
- ![exercise-1](output/exercise%20-1.jpeg)
+ ![exercise-1](images/output/exercise%20-1.jpeg)
