@@ -4,7 +4,7 @@ tasks from
 
 ## Demo-website
 
-- [live](index.html)
+- [live](https://mohamedaslam-e.github.io/betasquirrel-task/)
 
 ## Task
 
