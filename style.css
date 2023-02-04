@@ -1,0 +1,31 @@
+body {
+  margin: 0 auto;
+  background-color: rgb(36, 41, 47);
+  display: flex;
+  justify-content: center;
+}
+.mainbar {
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  width: 400px;
+  display: flex;
+  margin-top: 16%;
+  border-radius: 20%;
+  justify-content: center;
+}
+nav {
+  align-self: center;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(36, 41, 47);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+a:hover{
+    background-color: rgb(36, 41, 47);
+    color: rgb(255, 255, 255) ;
+    border-radius: 30%;
+}
