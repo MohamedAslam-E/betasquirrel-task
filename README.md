@@ -1,6 +1,6 @@
 # betasquirrel-task
 
-tasks from 
+tasks from betasquirrel
 
 ## Demo-website
 
