@@ -57,6 +57,7 @@ tasks from betasquirrel
 - [Tables](https://www.w3schools.com/html/html_tables.asp)
 - [classes](https://www.w3schools.com/html/html_classes.asp)
 - [id](https://www.w3schools.com/html/html_id.asp)
+- [Tables](https://www.w3schools.com/html/html_tables.asp)
 
  ## Exercise
 

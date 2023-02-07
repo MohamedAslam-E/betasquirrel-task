@@ -22,7 +22,7 @@ body {
   width: 474.2px;
   height: 300px;
   background-color: rgb(202, 209, 232);
-  float:left;
+  float: left;
 }
 .box2 {
   margin-left: 25px;
@@ -41,10 +41,9 @@ body {
   display: flex;
   align-self: center;
   padding: 40px;
-  
 }
-a{
-    color: aliceblue;
-    padding: 20px;
-    text-decoration: none;
+a {
+  color: aliceblue;
+  padding: 20px;
+  text-decoration: none;
 }
