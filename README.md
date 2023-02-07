@@ -18,8 +18,10 @@ tasks from betasquirrel
 
 - `cd` - change current directory. ex:`cd Desktop`,`cd ..`
 - `ls` - list contents of a directory,Ex: `ls -a` lists hidden files as well.
-- `pwd` - Display current working directory path
+- `pwd` - Display current working directory path.
 - `cat` - Display contents of a file Ex: `cat README.md`
+- `mkdir` - to creat a new folder using github bash.
+- `cd ..` - change back to previous current directory path 
 
 ## Git commands
 
