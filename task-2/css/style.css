@@ -52,7 +52,6 @@ body {
   color: aliceblue;
 }
 
-
 .left {
   float: left;
 }
@@ -64,27 +63,26 @@ body {
   margin-left: 70px;
   text-decoration-color: blueviolet;
 }
-.right a{
+.right a {
   text-decoration: none;
   margin-left: 5px;
 }
-.mainbar p{
+.mainbar p {
   color: blue;
-
 }
-.box2 > p{
+.box2 > p {
   color: navy;
 }
-.right a:hover{
+.right a:hover {
   background-color: aliceblue;
   color: chocolate;
 }
-.right a:active{
+.right a:active {
   background-color: chartreuse;
 
   color: darkred;
 }
-.right a:link{
+.right a:link {
   background-color: cyan;
   color: rgb(153, 118, 118);
 }

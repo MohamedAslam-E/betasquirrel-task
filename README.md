@@ -59,3 +59,5 @@ tasks from betasquirrel
  ## Exercise
 
  ![exercise-1](images/output/exercise%20-1.jpeg)
+
+ ![exercise-2](images/output/exercise-2.png)
