@@ -21,7 +21,9 @@ tasks from betasquirrel
 - `pwd` - Display current working directory path.
 - `cat` - Display contents of a file Ex: `cat README.md`
 - `mkdir` - to creat a new folder using github bash.
-- `cd ..` - change back to previous current directory path 
+- `cd ..` - change back to previous current directory path
+- `rm` - The rm command is used to remove a file. EX: `rm filename`
+- `clear` - To clear the screen EX:`clear` 
 
 ## Git commands
 
@@ -34,6 +36,10 @@ tasks from betasquirrel
 4.`git commit `commit changes to git. `git commit -m "Initial commit"`
 
 5.`git push`push your local commits to remote repo Ex:`git push origin   main`
+
+6.`git reset` This command undoes all the commits after the specified commit and preserves the changes locally.
+
+7.`git pull` This command fetches and merges changes on the remote server to your working directory.
 
 ## Reading tasks
 
