@@ -6,6 +6,11 @@ tasks from betasquirrel
 
 - [live](https://mohamedaslam-e.github.io/betasquirrel-task/)
 
+## Accounts
+
+- [Linkedln](www.linkedin.com/in/mohamed-aslam-631065245)
+- [stackoverflow](https://stackoverflow.com/users/21194385/mohamed-aslam)
+
 ## Task
 
 | Requirments                        | output                          |
