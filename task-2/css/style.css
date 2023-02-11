@@ -36,7 +36,7 @@ body {
   margin-left: 5px;
 }*/
 .mainboxleft {
-  background-color: aqua;
+  background-color: rgb(133, 223, 127);
   height: 50%;
   width: 25%;
   float: left;
@@ -65,22 +65,15 @@ body {
   text-decoration: none;
   margin-left: 5px;
 }
-.mainbar p {
-  color: blue;
-}
-.box2 > p {
-  color: navy;
-}
 .right a:hover {
   background-color: aliceblue;
   color: chocolate;
 }
 .right a:active {
   background-color: chartreuse;
-
   color: darkred;
 }
 .right a:link {
-  background-color: cyan;
-  color: rgb(153, 118, 118);
+  padding: 20px;
+  color: white;
 }
