@@ -56,10 +56,12 @@ body {
 .box2 {
   float: right;
   margin-right: 70px;
+  overflow: scroll;
 }
 .box1 {
   margin-left: 70px;
   text-decoration-color: blueviolet;
+  overflow: scroll;
 }
 .right a {
   text-decoration: none;
