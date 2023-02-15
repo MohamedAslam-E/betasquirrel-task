@@ -6,6 +6,7 @@ body {
   height: 115px;
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
 }
 #mainbar {
   background-color: rgb(210, 217, 233);
@@ -27,14 +28,6 @@ body {
   top: 5%;
   border: 4px solid chartreuse;
 }
-/*#thirdsecondbox {
-  background-color: antiquewhite;
-  height: 98%;
-  width: 1855px;
-  position: relative;
-  top: 1%;
-  margin-left: 5px;
-}*/
 .mainboxleft {
   background-color: rgb(133, 223, 127);
   height: 50%;
@@ -56,12 +49,12 @@ body {
 .box2 {
   float: right;
   margin-right: 70px;
-  overflow: scroll;
+  overflow: hidden;
 }
 .box1 {
   margin-left: 70px;
   text-decoration-color: blueviolet;
-  overflow: scroll;
+  overflow: hidden;
 }
 .right a {
   text-decoration: none;
@@ -78,4 +71,18 @@ body {
 .right a:link {
   padding: 20px;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .right a {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainboxleft {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
+    top: 0;
+  }
 }

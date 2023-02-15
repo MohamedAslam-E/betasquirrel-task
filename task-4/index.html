@@ -4,74 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sample 4</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title><task-4></title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="topbar">
-        <div class="left" > <img src="images/pngaaa.com-5043320.png" alt="logo">
-        <h1>Figma</h1><img src="images/Picsart_23-01-26_19-29-23-563.png" alt="logo" style="padding-left: 1670px;"></div>
-        <div class="right"></div>  
-    <div id="sidebar">
-      <p><strong>Dashboard</strong></p>
-      <nav>
-        <a href="#">Users</a>
-        <br />
-        <a href="#">Customers</a>
-        <br />
-        <a href="#">Purchases</a>
-        <br />
-        <a href="#">Sales</a>
-        <br />
-        <a href="#">Tax</a>
-        <br />
-        <a href="#">Employees</a>
-        <br />
-        <a href="#">Accounts</a>
-        <br />
-        <a href="#">Configuration</a>
-        <br />
-        <a href="#">Auditing</a>
-        <br />
-        <a href="#">Reports</a>
-      </nav>
+      <div id="left">
+        <img src="images/pngaaa.com-5043320.png" alt="logo" />
+        <h2>Figma</h2>
+      </div>
+      <div id="right">
+        <img
+          src="images/Picsart_23-01-26_19-29-23-563.png"
+          alt="profile photo"
+        />
+      </div>
     </div>
-    <h4>Dashboard</h4>
-    <div class="boxes box1">
-      <p>Total Sales</p>
-      <p>AED 20,0000</p>
-    </div>
-    <div class="boxes box2">
-      <p>Total Purchase</p>
-      <p>AED 10,0000</p>
-    </div>
-    <div class="boxes box3">
-      <p>Total Expenses</p>
-      <p>AED 5,0000</p>
-    </div>
-    <div class="boxes box4">
-      <p>Revenue</p>
-      <p>AED 5,0000</p>
-    </div>
-    <div class="circle circle1">
-      <div id="inner1"><p>50/400</p></div>
-    </div>
-    <div class="circle circle2">
-      <div id="inner2"><p>10/200</p></div>
-    </div>
-    <div class="circle circle3">
-      <div id="inner3">
-        <div id="inner33"><p>Danger</p></div>
-      </div>     
-    </div>
-    <div class="graph">
-        <div id="bar1"></div>
-        <div id="bar2"></div>
-        <div id="bar3"></div>
-        <div id="bar4"></div>
-        <div id="bar5"></div>
-        <div id="bar6"></div>
-        <div id="bar7"></div>     
+    <div class="main">
+      <div id="sidebar">
+        <nav>
+          <p>Dashboard</p>
+          <a href="#">Users</a>
+          <a href="#">Customers</a>
+          <a href="#">Purchases</a>
+          <a href="#">Sales</a>
+          <a href="#">Employee</a>
+          <a href="#">Configuration</a>
+          <a href="#">Accounts</a>
+          <a href="#">Auditing</a>
+          <a href="#">Reports</a>
+        </nav>
+      </div>
+      <div id="container">
+        <h2>Dashboard</h2>
+        <div id="tile-container">
+          <div class="tile green-bg">
+            <h2>Total sales</h2>
+            <h3>20,0000</h3>
+          </div>
+          <div class="tile purple-bg">
+            <h2>Total Purchases</h2>
+            <h3>10,0000</h3>
+          </div>
+          <div class="tile red-bg">
+            <h2>Total Expenses</h2>
+            <h3>5,0000</h3>
+          </div>
+          <div class="tile cyan-bg">
+            <h2>Revenue</h2>
+            <h3>5,0000</h3>
+          </div>
+        </div>
+        <div id="circle-container">
+          <div class="circle purple-bg">
+            <div class="inner-one green-bg">
+              <h2 style="color: white">50/400</h2>
+            </div>
+          </div>
+          <div class="circle cyan-bg">
+            <div class="inner-two">
+              <h2>10/200</h2>
+            </div>
+          </div>
+          <div class="circle red-bg">
+            <div class="inner-three">
+              <div class="inner-four purple-bg">
+                <h2>Danger</h2>
+              </div>
+            </div>
+          </div>
+          <div class="chart">
+            <div class="bar green-bg one"></div>
+            <div class="bar purple-bg two"></div>
+            <div class="bar red-bg three"></div>
+            <div class="bar cyan-bg four"></div>
+            <div class="bar green-bg five"></div>
+            <div class="bar red-bg six"></div>
+            <div class="seven"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
