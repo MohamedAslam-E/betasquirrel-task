@@ -10,7 +10,6 @@ body {
   justify-content: center;
   justify-content: space-between;
   overflow: hidden;
-  padding: 5px 0 0 10px;
 }
 .mainbar {
   float: left;
@@ -39,14 +38,16 @@ body {
 }
 .left > h2 {
   color: aliceblue;
-  display: inline;
+  float: left;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 15%;
 }
 .left img {
   height: 60px;
   width: 60px;
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 15px;
+  float: left;
 }
 .right {
   display: flex;
@@ -79,4 +80,5 @@ a {
     .menu-bar {
       display: none;
     }
+    .boxes{}
   }
