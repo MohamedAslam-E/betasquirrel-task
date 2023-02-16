@@ -39,7 +39,7 @@ body {
 .left > h2 {
   color: aliceblue;
   float: left;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 15%;
 }
 .left img {
@@ -63,7 +63,7 @@ a {
   .topbar a {
     display: none;
   }
-  .boxes{
+  .boxes {
     width: 100%;
     margin-left: 0;
   }
@@ -71,14 +71,15 @@ a {
     font-size: 20px;
     color: aliceblue;
   }
-  .mainbar{
+  .mainbar {
     width: 100%;
     height: auto;
-  } 
   }
-  @media screen and (min-width: 768px) {
-    .menu-bar {
-      display: none;
-    }
-    .boxes{}
+}
+@media screen and (min-width: 768px) {
+  .menu-bar {
+    display: none;
   }
+  .boxes {
+  }
+}

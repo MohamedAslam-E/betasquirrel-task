@@ -45,9 +45,13 @@ tasks from betasquirrel
 6.`git reset` This command undoes all the commits after the specified commit and preserves the changes locally.
 
 7.`git pull` This command fetches and merges changes on the remote server to your working directory.
+
 8.`git diff` - see the changes on each file
+
 9.`git log` - see commit history
+
 10.`git stash` - stash your uncommitted changes
+
 11.`git status` - to see the current changes as list
 
 ## Reading tasks

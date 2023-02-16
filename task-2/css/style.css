@@ -13,6 +13,8 @@ body {
   height: 340px;
   width: 100%;
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 #thirdbox {
   background-color: rgb(185, 65, 66);
@@ -33,8 +35,9 @@ body {
   height: 50%;
   width: 25%;
   float: left;
-  position: relative;
-  top: 80px;
+  align-self: center;
+  /*position:relative;
+  top: 80px;*/
 }
 .right {
   float: right;
@@ -76,6 +79,17 @@ body {
   .right a {
     display: none;
   }
+  .box1 {
+    width: auto;
+  }
+  .box2 {
+    width: auto;
+    margin-left: 10px;
+  }
+  .mainboxleft {
+    width: auto;
+    height: auto;
+  }
 }
 @media screen and (max-width: 425px) {
   .mainboxleft {
@@ -84,5 +98,10 @@ body {
     margin-bottom: 10px;
     position: relative;
     top: 0;
+    height: auto;
+  }
+  #mainbar {
+    flex-direction: column;
+    height: auto;
   }
 }
