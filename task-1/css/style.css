@@ -59,13 +59,13 @@ a {
   padding: 20px;
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 426px) {
   .topbar a {
     display: none;
   }
   .boxes {
-    width: 100%;
     margin-left: 0;
+    width: 100%;
   }
   .menu-bar i {
     font-size: 20px;
@@ -75,11 +75,21 @@ a {
     width: 100%;
     height: auto;
   }
+  .box1 {
+    width: 100%;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .menu-bar {
     display: none;
   }
-  .boxes {
+  .topbar a {
+    display: none;
+  }
+  .box1 {
+    width: 100%;
+  }
+  .box2 {
+    width: calc((100% / 2) - 35px);
   }
 }

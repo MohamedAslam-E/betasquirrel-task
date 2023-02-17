@@ -36,6 +36,7 @@ body {
   width: 25%;
   float: left;
   align-self: center;
+  border: 2px solid black;
   /*position:relative;
   top: 80px;*/
 }
@@ -90,8 +91,11 @@ body {
     width: auto;
     height: auto;
   }
+  #thirdfirstbox {
+    width: 96%;
+  }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .mainboxleft {
     width: 100%;
     margin: 0;
@@ -103,5 +107,6 @@ body {
   #mainbar {
     flex-direction: column;
     height: auto;
+    padding-top: 10px;
   }
 }
