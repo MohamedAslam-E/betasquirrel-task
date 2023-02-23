@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>best
-    </title>
-    <link rel="stylesheet" href="css/form-style.css" />
+    <title>best</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="topbar">
@@ -14,7 +13,9 @@
         <img src="images/logo.png" />
         <h2>One School</h2>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <img src="images/avatar-11c4b36e81a589c82189b293c33bde43.jpg" />
+      </div>
     </div>
     <div class="main">
       <div class="sidebar">
@@ -24,80 +25,149 @@
           <a href="">EXAMS</a>
         </ul>
       </div>
-      <div class="container">
-        <h5>STUDENT REGISTRATION</h5>
-        <div class="form-container">
-          <div class="form-control firstname">
-            <label>First Name<span style="color: red" ;>*</span>:</label>
-            <input
-              type="text"
-              name="firstname"
-              placeholder="Enter your first name "
-            />
-          </div>
-          <div class="form-control lastname">
-            <label>Last Name<span style="color: red" ;>*</span>:</label>
-            <input
-              type="text"
-              name="lastname"
-              placeholder="Enter your last name "
-            />
-          </div>
-          <div class="form-control mobile">
-            <label>Mobile<span style="color: red" ;>*</span>:</label>
-            <input
-              type="number"
-              name="mobile"
-              placeholder="Enter your mobile number "
-            />
-          </div>
-          <div class="form-control email">
-            <label>Email<span style="color: red" ;>*</span>:</label>
-            <input type="email" name="Email" placeholder="Enter your email " />
-          </div>
-          <div class="form-control branch">
-            <label>Branch<span style="color: red" ;>*</span>:</label>
-            <select>
-              <option value="">Select Branch you like</option>
-              <option value="cs">cs</option>
-              <option value="mech">mechanical</option>
-              <option value="electronics">elctronics</option>
-            </select>
-          </div>
-          <div class="form-control Facility">
-            <label>Do You Need Hostel Facility:</label>
-            <br>
-            <input type="radio" name="need" value="yes" />Yes
-            <input type="radio" name="need" value="no" />No
-          </div>
-          </div>
-          
+      <div class="right-container">
+        <div class="container">
+          <div class="st"><h5>STUDENT REGISTRATION</h5></div>
+          <form action="#">
+            <div class="form-container">
+              <div class="names">
+                <div class="firstname-left">
+                  <div class="fname-label">
+                    <label
+                      >First Name<span style="color: red" ;>*</span>:</label
+                    >
+                  </div>
+                  <div class="input-name">
+                    <input
+                      type="text"
+                      name="firstname"
+                      placeholder="Enter your first name "
+                    />
+                  </div>
+                </div>
+                <div class="lastname-right">
+                  <div class="lname-div">
+                    <label>Last Name<span style="color: red" ;>*</span>:</label>
+                  </div>
+                  <div class="input-name">
+                    <input
+                      type="text"
+                      name="lastname"
+                      placeholder="Enter your last name "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-email">
+                <div class="m-e-left">
+                  <div class="mobile-label">
+                    <label>Mobile<span style="color: red" ;>*</span>:</label>
+                  </div>
+                  <div class="mobile-input">
+                    <input
+                      type="number"
+                      name="mobile"
+                      placeholder="Enter your mobile number "
+                    />
+                  </div>
+                </div>
+                <div class="email-right">
+                  <div class="email-label">
+                    <label>Email<span style="color: red" ;>*</span>:</label>
+                  </div>
+                  <div class="mobile-input">
+                    <input
+                      type="email"
+                      name="Email"
+                      placeholder="Enter your email "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="branch-facility">
+                <div class="b-f-left">
+                  <div class="b-label">
+                    <label>Branch<span style="color: red" ;>*</span>:</label>
+                  </div>
+                  <div class="b-select">
+                    <select>
+                      <option value="">Select Branch you like</option>
+                      <option value="cs">cs</option>
+                      <option value="mech">mechanical</option>
+                      <option value="electronics">elctronics</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="b-f-right">
+                  <div class="f-label">
+                    <label>You Need Hostel Facility:</label> 
+                  </div>
+                  <div class="f-input">
+                    <input type="radio" name="need" value="yes" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="need" value="no" />
+                    <label for="no">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="check-box">
+              <div><p>Choose additional subjects:</p></div>
+              <div class="options">
+                <div>
+                  <input type="checkbox" name="cyber" value="cyber" />
+                  <label for="Cyber">Cyber security</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="Artificial Intelligence"
+                    value="Artificial Intelligence"
+                  />
+                  <label for="Artificial Intelligence">
+                    Artificial Intelligence</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="Block chain"
+                    value="Block chain"
+                  />
+                  <label for="Block chain"> Block chain</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="IOT" value="IOT" />
+                  <label for="IOT">IOT</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="Robotics" value="Robotics" />
+                  <label for="Robotics"> Robotics</label>
+                </div>
+              </div>
+            </div>
+            <div class="address">
+              <div class="address-label">
+                <label
+                  >Permenent Address<span style="color: red" ;>*</span> :</label
+                >
+              </div>
+              <div class="address-ta">
+                <textarea
+                  name="address"
+                  placeholder="Enter your Address"
+                  rows="8"
+                  cols="50"
+                ></textarea>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="reset-btn" type="reset">clear</button>
+              <button class="submit-btn" type="submit">submit</button>
+            </div>
+          </form>
         </div>
-       <div class="sec-div"> 
-        <div class="subject">
-        <label>Choose Additional subjects :</label>
-        <br>
-        <input type="checkbox" />Cyber Security
-        <input type="checkbox" />Artificial Iinteligence
-        <input type="checkbox" />Blockchain <input type="checkbox" />IoT
-        <input type="checkbox" />Robotics
       </div>
-      <div class="address">
-        <label>Permenent Address<span style="color: red" ;>*</span> :</label>
-        <textarea
-          name="address"
-          placeholder="Enter your Address"
-          rows="8"
-          cols="50"
-        ></textarea></div>
-        <div class="button-container">
-          <button class="clear">clear</button>
-          <button class="submit">submit</button>
-        </div>
-      </div>
-      
-     
-    </div>
     </div>
   </body>
 </html>
