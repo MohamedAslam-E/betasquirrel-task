@@ -131,6 +131,9 @@ textarea {
   margin-left: 10px;
   padding: 10px 20px 10px 20px;
 }
+textarea{
+  width: 45%;
+}
 @media screen and (max-width: 567px) {
   .sidebar {
     display: none;
@@ -187,6 +190,9 @@ textarea {
   .email-right,
   .b-f-right {
     margin-top: 10px;
+  }
+  textarea{
+    width: 90%;
   }
 }
 @media screen and (min-width: 567px) and (max-width: 768px) {
