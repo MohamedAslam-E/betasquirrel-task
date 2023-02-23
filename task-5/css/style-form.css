@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: auto;
   color: rgb(90, 90, 90);
 }
@@ -15,12 +15,12 @@ body {
 .left {
   display: flex;
 }
-.sidebar a{
+.sidebar a {
   display: flex;
   flex-direction: column;
   padding: 10px;
   text-decoration: none;
-  color:  rgb(90, 90, 90);
+  color: rgb(90, 90, 90);
 }
 h2 {
   color: rgb(90, 90, 90);
@@ -34,16 +34,15 @@ h2 {
   align-self: center;
   margin-left: 30px;
 }
-.right{
+.right {
   height: 60px;
   align-content: center;
   align-self: center;
-display: flex;
-border-radius: 50%;
+  display: flex;
+  border-radius: 50%;
 }
 .right img {
   border-radius: 50%;
-
 }
 .main {
   height: calc(100vh - 102px);
@@ -67,62 +66,64 @@ border-radius: 50%;
   display: flex;
   flex-direction: column;
 }
-.mobile-email{
+.mobile-email {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-.branch-facility{
+.branch-facility {
   display: flex;
   justify-content: space-between;
 }
 .options {
   display: flex;
 }
-.input-name input{
+.input-name input {
   height: 40px;
   border-radius: 0;
   width: 28vw;
   border-color: rgb(159, 159, 159);
 }
-.mobile-input input{
+.mobile-input input {
   height: 40px;
   border-radius: 0;
   width: 28vw;
   border-color: rgb(159, 159, 159);
 }
 select {
-height: 40px;
-border-radius: 0;
-width: 29vw;
+  height: 40px;
+  border-radius: 0;
+  width: 29vw;
 }
-.container{
+.container {
   width: 95%;
 }
-.b-f-right{
-  width:28.4vw;
+.b-f-right {
+  width: 28.4vw;
 }
-.names,.mobile-email,.branch-facility{
+.names,
+.mobile-email,
+.branch-facility {
   margin-top: 20px;
 }
 .address {
   margin-top: 20px;
 }
-textarea{
+textarea {
   border-radius: 0;
 }
-.button-container{
-display: flex;
-justify-content: center;
-margin-top: 20px;
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-.reset-btn{
+.reset-btn {
   background-color: rgb(254, 115, 95);
   border-radius: 35%;
   border-color: transparent;
   color: white;
   padding: 10px 20px 10px 20px;
 }
-.submit-btn{
+.submit-btn {
   background-color: rgb(59, 185, 137);
   border-radius: 35%;
   border-color: transparent;
@@ -130,45 +131,45 @@ margin-top: 20px;
   margin-left: 10px;
   padding: 10px 20px 10px 20px;
 }
-@media  screen and (max-width:567px) {
+@media screen and (max-width: 567px) {
   .sidebar {
     display: none;
   }
   .options {
     display: block;
   }
-  .names{
+  .names {
     display: block;
   }
-  .mobile-email{
-    display: block
-  }
-  .branch-facility{
+  .mobile-email {
     display: block;
   }
-  .container{
+  .branch-facility {
+    display: block;
+  }
+  .container {
     width: 100%;
   }
-  .input-name input{
+  .input-name input {
     height: 30px;
     border-radius: 0;
     width: calc(100% - 40px);
   }
-  .mobile-input input{
+  .mobile-input input {
     height: 30px;
     border-radius: 0;
     width: calc(100% - 40px);
   }
   select {
-  height: 30px;
-  border-radius: 0;
-  width: calc(100% - 40px);
+    height: 30px;
+    border-radius: 0;
+    width: calc(100% - 40px);
   }
   .right-container {
     display: flow-root;
     padding: 20px 20px 10px 20px;
   }
-  .topbar{
+  .topbar {
     height: 80px;
   }
   .left img {
@@ -177,49 +178,55 @@ margin-top: 20px;
     align-self: center;
     margin-left: 20px;
   }
-  .names,.mobile-email,.branch-facility{
+  .names,
+  .mobile-email,
+  .branch-facility {
     margin-top: 10px;
   }
-  .lastname-right,.email-right,.b-f-right{
+  .lastname-right,
+  .email-right,
+  .b-f-right {
     margin-top: 10px;
   }
 }
-@media  screen and (min-width:567px) and (max-width:768px) {
-  .sidebar{
+@media screen and (min-width: 567px) and (max-width: 768px) {
+  .sidebar {
     width: 140px;
   }
   .topbar {
     height: 90px;
   }
-  .sidebar a{
+  .sidebar a {
     display: flex;
     flex-direction: column;
     padding: 3px 0px 30px 0px;
     text-decoration: none;
-    color:  rgb(90, 90, 90);
+    color: rgb(90, 90, 90);
   }
-  .input-name input{
+  .input-name input {
     height: 30px;
     border-radius: 0;
     width: calc(100% - 30px);
   }
-  .mobile-input input{
+  .mobile-input input {
     height: 30px;
     border-radius: 0;
     width: calc(100% - 30px);
   }
   select {
-  height: 30px;
-  border-radius: 0;
-  width: calc(100% - 10px);
+    height: 30px;
+    border-radius: 0;
+    width: calc(100% - 10px);
   }
-  .container{
+  .container {
     width: 90%;
   }
-  .b-f-right{
+  .b-f-right {
     width: 24vw;
   }
-  .names,.mobile-email,.branch-facility{
+  .names,
+  .mobile-email,
+  .branch-facility {
     margin-top: 10px;
   }
 }
