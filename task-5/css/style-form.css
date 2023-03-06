@@ -17,10 +17,18 @@ body {
 }
 .sidebar a {
   display: flex;
-  flex-direction: column;
   padding: 10px;
   text-decoration: none;
   color: rgb(90, 90, 90);
+}
+.sidebar i {
+  vertical-align: middle;
+  line-height: 21px;
+  margin-right: 4px;
+}
+.i2,
+.i3 {
+  margin-right: 12px !important;
 }
 h2 {
   color: rgb(90, 90, 90);
@@ -131,7 +139,7 @@ textarea {
   margin-left: 10px;
   padding: 10px 20px 10px 20px;
 }
-textarea{
+textarea {
   width: 45%;
 }
 @media screen and (max-width: 567px) {
@@ -191,7 +199,7 @@ textarea{
   .b-f-right {
     margin-top: 10px;
   }
-  textarea{
+  textarea {
     width: 90%;
   }
 }
@@ -204,7 +212,6 @@ textarea{
   }
   .sidebar a {
     display: flex;
-    flex-direction: column;
     padding: 3px 0px 30px 0px;
     text-decoration: none;
     color: rgb(90, 90, 90);
