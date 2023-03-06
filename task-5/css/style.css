@@ -17,10 +17,18 @@ body {
 }
 .sidebar a {
   display: flex;
-  flex-direction: column;
   padding: 10px;
   text-decoration: none;
   color: rgb(90, 90, 90);
+}
+.sidebar i {
+  vertical-align: middle;
+  line-height: 22px;
+  margin-right: 4px;
+}
+.i2,
+.i3 {
+  margin-right: 12px !important;
 }
 h2 {
   color: rgb(90, 90, 90);
@@ -64,6 +72,10 @@ td {
   border: 1px solid rgb(163, 163, 163);
   border-collapse: collapse;
   padding: 20px;
+  text-align: left;
+}
+th,td:first-child{
+  text-align: center !important;
 }
 .table-all {
   padding: 10px;
