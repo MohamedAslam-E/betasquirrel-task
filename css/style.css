@@ -3,18 +3,20 @@ body {
   background-color: rgb(36, 41, 47);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .mainbar {
   background-color: rgb(255, 255, 255);
   height: 500px;
   width: 600px;
   display: flex;
-  margin-top: 16%;
-  border-radius: 20%;
+  margin-top: 10%;
+  border-radius: 20px;
   justify-content: center;
 }
 nav {
   align-self: center;
+  position: relative;
 }
 a {
   text-transform: uppercase;
