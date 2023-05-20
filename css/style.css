@@ -7,10 +7,10 @@ body {
 }
 .mainbar {
   background-color: rgb(255, 255, 255);
-  /* height: 500px;
-  width: 600px; */
-  min-height: 400px;
-  min-width: 500px;
+  height: 500px;
+  width: 600px;
+  /* min-height: 400px;
+  min-width: 500px; */
   display: flex;
   margin-top: 10%;
   border-radius: 20px;
