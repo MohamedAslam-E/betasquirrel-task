@@ -25,6 +25,8 @@
 
     if(mysqli_num_rows($result) > 0){
         $student = mysqli_fetch_array($result);
+        $all_sub = $student['subject'];
+        $sub = explode(",",$all_sub);
     }
 }
   mysqli_close($conn);
@@ -124,31 +126,31 @@
                     </div>
                     <div class="col-md-12 d-md-flex justify-content-between required">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Cyber security" id="cybersecurity" onclick="return myfun()" <?php if($student['subject'] == 'Cyber security'){echo 'checked';}else{'';} ?>  readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Cyber security" id="cybersecurity" onclick="return myfun()" <?php if(in_array('Cyber security',$sub)){echo 'checked';}else{'';} ?>  readonly/>
                             <label class="form-check-label" for="cybersecurity">
                                 Cyber security
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Artificial intelligence" id="artificialintelligence" onclick="return myfun()" <?php if($student['subject'] == 'Artificial intelligence'){echo 'checked';}else{'';} ?> readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Artificial intelligence" id="artificialintelligence" onclick="return myfun()" <?php if(in_array('Artificial intelligence',$sub)){echo 'checked';}else{'';} ?> readonly/>
                             <label class="form-check-label" for="artificialintelligence">
                                 Artificial intelligence
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="IOT" id="iot" onclick="return myfun()" <?php if($student['subject'] == 'IOT'){echo 'checked';}else{'';} ?> readonly />
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="IOT" id="iot" onclick="return myfun()" <?php if(in_array('IOT',$sub)){echo 'checked';}else{'';} ?> readonly />
                             <label class="form-check-label" for="io">
                                 IOT
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Robotics" id="robotics" onclick="return myfun()" <?php if($student['subject'] == 'Robotics'){echo 'checked';}else{'';} ?> readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Robotics" id="robotics" onclick="return myfun()" <?php if(in_array('Robotics',$sub)){echo 'checked';}else{'';} ?> readonly/>
                             <label class="form-check-label" for="robotics">
                                 Robotics
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Block chain" id="blockchain" onclick="return myfun()" <?php if($student['subject'] == 'Block chain'){echo 'checked';}else{'';} ?> readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Block chain" id="blockchain" onclick="return myfun()" <?php if(in_array('Block chain',$sub)){echo 'checked';}else{'';} ?> readonly/>
                             <label class="form-check-label" for="blockchain">
                                 Block chain
                             </label>
