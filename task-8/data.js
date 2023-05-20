@@ -15,6 +15,3 @@ function myfun(){
         document.getElementById('notvalid').innerHTML=""
     }
   }
-function checkdelete(){
-    return confirm("are you sure ?");
-}
