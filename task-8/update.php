@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
     <?php
 
@@ -108,7 +106,6 @@
             $student = mysqli_fetch_array($result);
             $all_sub = $student['subject'];
             $sub = explode(",",$all_sub);
-
 
             mysqli_close($conn);
             ?>          

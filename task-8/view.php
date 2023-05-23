@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -76,7 +75,7 @@
                         <input type="tel" pattern="[6-9]{1}[0-9]{9}" name="mobile_num" class="form-control rounded-0 <?php if (!empty($mobile_num_error)) {
                                                                                                                             echo 'is-invalid';
                                                                                                                         } ?>" id="inputmobile" placeholder="Enter your Mobile number" disabled readonly value="<?php echo $student['mobile'];  ?>" />
-                      
+                    <!-- email   -->
                     </div>
                     <div class="col-12 col-md-6">
                         <label for="inputemail" class="form-label">E-mail :</label>
@@ -126,31 +125,31 @@
                     </div>
                     <div class="col-md-12 d-md-flex justify-content-between required">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Cyber security" id="cybersecurity" onclick="return myfun()" <?php if(in_array('Cyber security',$sub)){echo 'checked';}else{'';} ?>  readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Cyber security" id="cybersecurity" onclick="return myfun()" <?php if(in_array('Cyber security',$sub)){echo 'checked';}else{'';} ?> disabled  readonly/>
                             <label class="form-check-label" for="cybersecurity">
                                 Cyber security
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Artificial intelligence" id="artificialintelligence" onclick="return myfun()" <?php if(in_array('Artificial intelligence',$sub)){echo 'checked';}else{'';} ?> readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Artificial intelligence" id="artificialintelligence" onclick="return myfun()" <?php if(in_array('Artificial intelligence',$sub)){echo 'checked';}else{'';} ?> disabled readonly/>
                             <label class="form-check-label" for="artificialintelligence">
                                 Artificial intelligence
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="IOT" id="iot" onclick="return myfun()" <?php if(in_array('IOT',$sub)){echo 'checked';}else{'';} ?> readonly />
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="IOT" id="iot" onclick="return myfun()" <?php if(in_array('IOT',$sub)){echo 'checked';}else{'';} ?> disabled readonly />
                             <label class="form-check-label" for="io">
                                 IOT
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Robotics" id="robotics" onclick="return myfun()" <?php if(in_array('Robotics',$sub)){echo 'checked';}else{'';} ?> readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Robotics" id="robotics" onclick="return myfun()" <?php if(in_array('Robotics',$sub)){echo 'checked';}else{'';} ?> disabled readonly/>
                             <label class="form-check-label" for="robotics">
                                 Robotics
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name='subject[]' value="Block chain" id="blockchain" onclick="return myfun()" <?php if(in_array('Block chain',$sub)){echo 'checked';}else{'';} ?> readonly/>
+                            <input class="form-check-input" type="checkbox" name='subject[]' value="Block chain" id="blockchain" onclick="return myfun()" <?php if(in_array('Block chain',$sub)){echo 'checked';}else{'';} ?> disabled readonly/>
                             <label class="form-check-label" for="blockchain">
                                 Block chain
                             </label>

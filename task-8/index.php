@@ -39,7 +39,7 @@ $result = mysqli_query($conn, $query);
       <div class="col-10 pt-4">
         <div class="col-12 d-flex justify-content-between pb-4">
           <span style="text-decoration: underline">STUDENT</span>
-          <a href="inddex.php"><button class="btn btn-success btn-sm" style="text-decoration: underline">
+          <a href="form.php"><button class="btn btn-success btn-sm" style="text-decoration: underline">
               Add Student
             </button></a>
         </div>

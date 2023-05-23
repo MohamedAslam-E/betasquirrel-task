@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +9,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <?php
 
@@ -32,7 +30,6 @@
     $field = stripslashes($field);
     return $field;
   }
-
 
   if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $first_name = sanitize($_POST['first_name']);
@@ -222,9 +219,7 @@
               </div>
             </div>
           </fieldset>
-      
            <!-- subject  -->
-
           <div>
             <label for="inputemail" class="form-label">Choose branch you like :</label>
           </div>
