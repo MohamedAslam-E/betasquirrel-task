@@ -12,11 +12,12 @@
 
 <body>
   <?php
-
   echo $_SERVER['REQUEST_METHOD'];
-  
+
+  //connecting to database
   include('database.php');
 
+  //fetching data from data base
   if (isset($_GET['viewid'])) {
     $id = mysqli_real_escape_string($conn,$_GET['viewid']) ;
     $query="SELECT * FROM list WHERE id='$id' ";

@@ -2,7 +2,6 @@
 include("database.php");
 $query = "select * from list";
 $result = mysqli_query($conn, $query);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +45,6 @@ $result = mysqli_query($conn, $query);
         <table class="table table-bordered">
 
           <!-- db_table -->
-
           <table class="table table-striped table-bordered">
             <tr>
               <th scope="col">ID</th>

@@ -11,9 +11,8 @@
 </head>
 <body>
   <?php
-
   echo $_SERVER['REQUEST_METHOD'];
-
+  // variable for storing form data
   $first_name = "";
   $last_name = "";
   $mobile_num = "";
@@ -23,6 +22,7 @@
   $all_subject = "";
   $address = "";
 
+  //fuction to sanitize data
   function sanitize($field)
   {
     $field = htmlspecialchars($field);
@@ -31,6 +31,7 @@
     return $field;
   }
 
+  // Execute this code on form submit
   if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $first_name = sanitize($_POST['first_name']);
     $last_name = sanitize($_POST['last_name']);
@@ -45,23 +46,28 @@
     }else{
       $all_subject = implode(',', $subject);
     }
-   
 
+    //validate data
     if (empty($first_name)) {
       $first_name_error = 'first name is needed';
     }
+
     if (empty($last_name)) {
       $last_name_error = 'last name is needed';
     }
+
     if (empty($mobile_num)) {
       $mobile_num_error = 'mobile number is needed';
     }
+
     if (empty($inputemail)) {
       $inputemail_error = 'email is needed';
     }
+
     if (empty($branch)) {
       $branch_error = 'select branch you like';
     }
+
     if($hostel === 'yes'){
       $hostel='yes';
     }else if($hostel === 'no'){
@@ -69,23 +75,28 @@
     }else{
       $hostel =  false;
     }
+
     if (empty($hostel)) {
       $hostel_error = 'selection needed';
     }
+
     if (empty($address)) {
       $address_error = 'Address is needed';
     }
   }
   
 
+  //connecting to database
   include('database.php');
 
-
+  //insert data into database after validate
   if(!empty($first_name && $last_name && $mobile_num  && $inputemail && $branch && $hostel && $address)){
     $sql = "INSERT INTO list (firstname,lastname,mobile,email,branch,hostel,subject,address)   
         VALUES ('$first_name','$last_name','$mobile_num','$inputemail','$branch','$hostel','$all_subject','$address')";
 
   $result= mysqli_query($conn, $sql);
+
+  //redirecting to display page after successful creation
   if($result){
       header('location:index.php');
       exit();
@@ -94,6 +105,7 @@
   }
   }
 
+  // Close database connection after use
   mysqli_close($conn);
 
   ?>
@@ -261,6 +273,7 @@
             <label for="exampleFormControlTextarea1">Premenent Address<span style="color: red" ;>*</span></label>
             <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3" name="address"  required><?php echo $address; ?></textarea>
           </div>
+          <!-- submit -->
           <div class="d-flex justify-content-end">
             <button type="reset" class="btn btn-danger btn-sm">Clear</button>
             <button type="submit" class="btn btn-success btn-sm">Submit</button>
