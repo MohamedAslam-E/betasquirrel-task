@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\studentController;
-use App\Models\student;
+use App\Http\Controllers\StudentController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +18,6 @@ use App\Models\student;
 Route::get('/', function () {
     return view('homePage');
 });
-Route::get('/wel', function () {
-    return view('welcome');
-});
+Route::resource('/student',StudentController::class);
 
-Route::resource('/student',studentController::class);
-
-Route::get('/user/{id}',[studentController::class,'show']);
+//Route::get('/user/{id}',[StudentController::class,'show']);

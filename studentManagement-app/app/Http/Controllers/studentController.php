@@ -5,16 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View; //laravel 10 standart
-use App\Models\student; /*path to model student to communicate*/
+use App\Models\Student; /*path to model student to communicate*/
 
-class studentController extends Controller
+class StudentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index(): View
     {
-        $students = student::all();
+        $students = Student::all();
         return view('student.index')->with('students',$students);
     }
 
@@ -38,7 +38,7 @@ class studentController extends Controller
         // $input->save();
         // return redirect()->route('student.index')->with('succcess');
 
-        $input = new student;
+        $input = new Student;
         $input->name = $request->name;
         $input->mobile =$request->mobile;
         $input->address=$request->address;
@@ -55,7 +55,7 @@ class studentController extends Controller
      */
     public function show(string $id)
     {
-        $students = student::findOrFail($id);
+        $students = Student::findOrFail($id);
         return view('student.show')->with('students',$students);
     }
 
@@ -64,7 +64,7 @@ class studentController extends Controller
      */
     public function edit(string $id)
     { 
-        $students = student::findOrFail($id);
+        $students = Student::findOrFail($id);
         return view('student.edit')->with('students',$students);
     }
 
@@ -73,7 +73,7 @@ class studentController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $students = student::find($id);
+        $students = Student::find($id);
         $input=$request->all();
         $students->update($input);
         return redirect('student');
